@@ -6,52 +6,22 @@
 </head>
 
 <body>
-    <div class="slides">
-        <div id="slide-1">
-            <img src="./images/step1.jpg" />
-            <p>information about step 1</p>
-        </div>
-        <div id="slide-2">
-            <img src="./images/step2.jpg" />
-            <p>information about step 2</p>
-        </div>
-        <div id="slide-3">
-            <img src="./images/step3.jpg" />
-            <p>information about step 3</p>
-        </div>
-        <div id="slide-4">
-            <img src="./images/step4.jpg" />
-            <p>information about step 4</p>
-        </div>
-        <div id="slide-5">
-            <img src="./images/step5.jpg" />
-            <p>information about step 5</p>
-        </div>
-        <div id="slide-6">
-            <img src="./images/step6.jpg" />
-            <p>information about step 6</p>
-        </div>
-        <div id="slide-7">
-            <img src="./images/step7.jpg" />
-            <p>information about step 7</p>
-        </div>
-        <div id="slide-8">
-            <img src="./images/step8.jpg" />
-            <p>information about step 8</p>
-        </div>
-        <div id="slide-9">
-            <img src="./images/step9.jpg" />
-            <p>information about step 9</p>
-        </div>
-        <div id="slide-10">
-            <img src="./images/step10.jpg" />
-            <p>information about step 10</p>
-        </div>
-        <div id="slide-11">
-            <img src="./images/step11.jpg" />
-            <p>information about step 11</p>
-        </div>
-    </div>
+    <h1>Basic Spell Packet Creation Guide</h1>
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+            </li>
+        </ol>
+    </section>
 </body>
 
 </html>
