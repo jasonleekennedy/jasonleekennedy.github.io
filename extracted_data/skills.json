@@ -1,0 +1,5806 @@
+{
+  "schema_version": 1,
+  "source": {
+    "file": "Rise of the Founders Rules.pdf",
+    "section": "Skills"
+  },
+  "skill_rules": {
+    "costs": "by_level is the listed CP cost for each sequential level; repeat_cost applies to later levels when unlimited is true. A '*' cost marker is preserved in annotations_by_level; the source notes that Personal Magic's marked levels cost no CP.",
+    "status": "blue, grey, and red are normalized lowercase; grey skills do not qualify for either blue or red creation limits.",
+    "dependencies": "Requirements retain their source expression; top-level OR creates alternatives, comma-separated terms are conjunctive, and parenthesized expressions remain intact. Teacher requirements are separate.",
+    "purchase_grants": "grants_on_purchase lists free levels or spell slots included when the skill is purchased; these grants are not additional CP purchases."
+  },
+  "skills": [
+    {
+      "id": "basic-flight",
+      "name": "Basic Flight",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          20,
+          30
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 30,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 20, 30+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Natural Wings",
+            "alternatives": [
+              [
+                "Natural Wings"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 78
+    },
+    {
+      "id": "mortal-strike",
+      "name": "Mortal Strike",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10,
+          15,
+          15,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 10, 15, 15, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes OR Blunts",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ],
+              [
+                "Blunts"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 80
+    },
+    {
+      "id": "disarm-strike",
+      "name": "Disarm Strike",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10,
+          10,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 15,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 10, 10, 15+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes OR Polearms OR Blunts",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ],
+              [
+                "Polearms"
+              ],
+              [
+                "Blunts"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 80
+    },
+    {
+      "id": "mangle",
+      "name": "Mangle",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10,
+          15,
+          15,
+          18
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 18,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 10, 15, 15, 18+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes OR Blunts",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ],
+              [
+                "Blunts"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 80
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          15,
+          15,
+          20,
+          20,
+          22
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 22,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 15, 15, 20, 20, 22+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes OR Polearms",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ],
+              [
+                "Polearms"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 80
+    },
+    {
+      "id": "resist-disarm",
+      "name": "Resist Disarm",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          10
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 10,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5, 5, 5, 5, 5, 5, 10+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes OR Blunts OR Polearms OR Daggers",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ],
+              [
+                "Blunts"
+              ],
+              [
+                "Polearms"
+              ],
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 81
+    },
+    {
+      "id": "death-grip",
+      "name": "Death Grip",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "3+ Resist Disarm",
+            "alternatives": [
+              [
+                "3+ Resist Disarm"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 81
+    },
+    {
+      "id": "iron-grasp",
+      "name": "Iron Grasp",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "9+ Resist Disarm, Death Grip",
+            "alternatives": [
+              [
+                "9+ Resist Disarm",
+                "Death Grip"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 81
+    },
+    {
+      "id": "weapon-training",
+      "name": "Weapon Training",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5, 5, 5, 5, 5 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Any Opening Weapon Group – See Text",
+            "alternatives": [
+              [
+                "Any Opening Weapon Group – See Text"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 81
+    },
+    {
+      "id": "daggers",
+      "name": "Daggers",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "aptitude-daggers",
+      "name": "Aptitude [Daggers]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15, 20 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "assassinate",
+      "name": "Assassinate",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          5,
+          10,
+          15,
+          15,
+          15,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 5, 10, 15, 15, 15, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "black-blade",
+      "name": "Black Blade",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          25
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "25 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Head Hunter",
+            "alternatives": [
+              [
+                "Head Hunter"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "body-shot",
+      "name": "Body Shot",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          12,
+          4
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 4,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "12, 4+++ CP"
+      },
+      "succession": "per_combat",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "combat-awareness",
+      "name": "Combat Awareness",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers, Study Target 1+",
+            "alternatives": [
+              [
+                "Daggers",
+                "Study Target 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 82
+    },
+    {
+      "id": "terminate",
+      "name": "Terminate",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          6,
+          6,
+          8,
+          8
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 8,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "4, 4, 6, 6, 8, 8+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers, 1 Assassinate",
+            "alternatives": [
+              [
+                "Daggers",
+                "1 Assassinate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 83
+    },
+    {
+      "id": "head-hunter",
+      "name": "Head Hunter",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes, Mortal Strike 1+, Daggers, Assassinate 1+, (Study Target 1+ OR Sneak Attack 1+)",
+            "alternatives": [
+              [
+                "Swords & Axes",
+                "Mortal Strike 1+",
+                "Daggers",
+                "Assassinate 1+",
+                "(Study Target 1+ OR Sneak Attack 1+)"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 83
+    },
+    {
+      "id": "kidnap",
+      "name": "Kidnap",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "1 Assassinate",
+            "alternatives": [
+              [
+                "1 Assassinate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 83
+    },
+    {
+      "id": "master-of-anatomy",
+      "name": "Master Of Anatomy",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "4 Levels of Study Target",
+            "alternatives": [
+              [
+                "4 Levels of Study Target"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 83
+    },
+    {
+      "id": "poison-proficiency-daggers",
+      "name": "Poison Proficiency [Daggers]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10, 10, 10 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 83
+    },
+    {
+      "id": "shadow-strike",
+      "name": "Shadow Strike",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [],
+        "annotations_by_level": [],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": false,
+        "source_text": "NA CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers, 1 Assassinate",
+            "alternatives": [
+              [
+                "Daggers",
+                "1 Assassinate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "sneak-attack",
+      "name": "Sneak Attack",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8,
+          8,
+          12,
+          12
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "8, 8, 12, 12 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "study-target",
+      "name": "Study Target",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8,
+          8,
+          12,
+          12
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "8, 8, 12, 12 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "viper-style",
+      "name": "Viper Style",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers",
+            "alternatives": [
+              [
+                "Daggers"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "swords-axes",
+      "name": "Swords & Axes",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "aptitude-swords-axes",
+      "name": "Aptitude [Swords & Axes]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          20,
+          30,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15, 20, 30, 20 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 84
+    },
+    {
+      "id": "en-garde",
+      "name": "En Garde",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes, Parry 3+",
+            "alternatives": [
+              [
+                "Swords & Axes",
+                "Parry 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 85
+    },
+    {
+      "id": "oak-bane",
+      "name": "Oak Bane",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          25
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "25 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes, Aptitude [Swords & Axes]",
+            "alternatives": [
+              [
+                "Swords & Axes",
+                "Aptitude [Swords & Axes]"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 85
+    },
+    {
+      "id": "to-ribbons",
+      "name": "To Ribbons",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          20,
+          35
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 35,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 20, 35+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes, Aptitude [Swords & Axes]",
+            "alternatives": [
+              [
+                "Swords & Axes",
+                "Aptitude [Swords & Axes]"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 85
+    },
+    {
+      "id": "twin-style",
+      "name": "Twin Style",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          25
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10, 25 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Swords & Axes",
+            "alternatives": [
+              [
+                "Swords & Axes"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 85
+    },
+    {
+      "id": "polearms",
+      "name": "Polearms",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          25
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "25 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 85
+    },
+    {
+      "id": "aptitude-polearms",
+      "name": "Aptitude [Polearms]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          25,
+          25
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15, 25, 25 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Polearms",
+            "alternatives": [
+              [
+                "Polearms"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "blunts",
+      "name": "Blunts",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "aptitude-blunts",
+      "name": "Aptitude [Blunts]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          20,
+          30,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10, 20, 30, 20 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Blunts",
+            "alternatives": [
+              [
+                "Blunts"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "massive-blow",
+      "name": "Massive Blow",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10,
+          12,
+          12,
+          12,
+          16,
+          16,
+          16,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 10, 12, 12, 12, 16, 16, 16, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Blunts",
+            "alternatives": [
+              [
+                "Blunts"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "wrecking-ball",
+      "name": "Wrecking Ball",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Blunts, Aptitude [Blunts] 3+, Massive",
+            "alternatives": [
+              [
+                "Blunts",
+                "Aptitude [Blunts] 3+",
+                "Massive"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 86
+    },
+    {
+      "id": "block",
+      "name": "Block",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          5,
+          10,
+          10,
+          20,
+          20,
+          25
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 25,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5, 5, 10, 10, 20, 20, 25+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Shield",
+            "alternatives": [
+              [
+                "Shield"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 87
+    },
+    {
+      "id": "negate",
+      "name": "Negate",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          8,
+          8,
+          12,
+          12
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 12,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "4, 4, 8, 8, 12, 12+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Shield",
+            "alternatives": [
+              [
+                "Shield"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 87
+    },
+    {
+      "id": "steel-guardian",
+      "name": "Steel Guardian",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4, 4, 4, 4 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Shield",
+            "alternatives": [
+              [
+                "Shield"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 87
+    },
+    {
+      "id": "bow",
+      "name": "Bow",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 87
+    },
+    {
+      "id": "aptitude-bow",
+      "name": "Aptitude [Bow]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          10,
+          10
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5, 10, 5, 10, 5, 10, 5, 10, 10, 10 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Bow",
+            "alternatives": [
+              [
+                "Bow"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "mortal-strike-bow",
+      "name": "Mortal Strike [Bow]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          10,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 10, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Bow",
+            "alternatives": [
+              [
+                "Bow"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "poison-proficiency-bow",
+      "name": "Poison Proficiency [Bow]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          25
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "25 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Bow",
+            "alternatives": [
+              [
+                "Bow"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "black-bow",
+      "name": "Black Bow",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Daggers, Bow",
+            "alternatives": [
+              [
+                "Daggers",
+                "Bow"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "hand-of-death",
+      "name": "Hand Of Death",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "8 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Bow",
+            "alternatives": [
+              [
+                "Bow"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "thrown-weapons",
+      "name": "Thrown Weapons",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "flying-vipers",
+      "name": "Flying Vipers",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Viper Style, Aptitude [Thrown] 3+",
+            "alternatives": [
+              [
+                "Viper Style",
+                "Aptitude [Thrown] 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "aptitude-thrown",
+      "name": "Aptitude [Thrown]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          20,
+          15,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "20, 15, 15 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Thrown",
+            "alternatives": [
+              [
+                "Thrown"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 88
+    },
+    {
+      "id": "natural-weapons-group",
+      "name": "Natural Weapons Group",
+      "status": "red",
+      "opening_skill": true,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 89
+    },
+    {
+      "id": "aptitude-natural-weapons",
+      "name": "Aptitude [Natural Weapons]",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          20,
+          30
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10, 20, 30 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Natural Weapons",
+            "alternatives": [
+              [
+                "Natural Weapons"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 89
+    },
+    {
+      "id": "killer-instinct",
+      "name": "Killer Instinct",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Natural Weapons, Frenzy 1+",
+            "alternatives": [
+              [
+                "Natural Weapons",
+                "Frenzy 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 89
+    },
+    {
+      "id": "frenzy",
+      "name": "Frenzy",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          10,
+          5,
+          15,
+          10,
+          5,
+          10
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 10,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 10, 5, 15, 10, 5, 10+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 5+",
+            "alternatives": [
+              [
+                "Hardiness 5+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 89
+    },
+    {
+      "id": "berserker-body",
+      "name": "Berserker Body",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "8 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 1+",
+            "alternatives": [
+              [
+                "Frenzy 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "instinct-over-will",
+      "name": "Instinct Over Will",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 3+, Bravery 3+",
+            "alternatives": [
+              [
+                "Frenzy 3+",
+                "Bravery 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "unstoppable-force",
+      "name": "Unstoppable Force",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          12
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "12 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 3+, Berserk Body, Hardiness 15+",
+            "alternatives": [
+              [
+                "Frenzy 3+",
+                "Berserk Body",
+                "Hardiness 15+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "berserker-endurance",
+      "name": "Berserker Endurance",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 1+, Hardiness 10+",
+            "alternatives": [
+              [
+                "Frenzy 1+",
+                "Hardiness 10+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "berserker-instincts",
+      "name": "Berserker Instincts",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 1+, Hardiness 10+",
+            "alternatives": [
+              [
+                "Frenzy 1+",
+                "Hardiness 10+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "berserker-strength",
+      "name": "Berserker Strength",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          24
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "24 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 1+",
+            "alternatives": [
+              [
+                "Frenzy 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 90
+    },
+    {
+      "id": "blood-and-sweat",
+      "name": "Blood And Sweat",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15, 15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Frenzy 1+",
+            "alternatives": [
+              [
+                "Frenzy 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 91
+    },
+    {
+      "id": "hardiness",
+      "name": "Hardiness",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 91
+    },
+    {
+      "id": "combat-endurance",
+      "name": "Combat Endurance",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          20
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "20 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 20+",
+            "alternatives": [
+              [
+                "Hardiness 20+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 91
+    },
+    {
+      "id": "die-hard",
+      "name": "Die Hard",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 15+",
+            "alternatives": [
+              [
+                "Hardiness 15+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 91
+    },
+    {
+      "id": "supreme-hardiness",
+      "name": "Supreme Hardiness",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 20+",
+            "alternatives": [
+              [
+                "Hardiness 20+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 91
+    },
+    {
+      "id": "rapid-metabolism",
+      "name": "Rapid Metabolism",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          5,
+          10,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5, 5, 10, 15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 20+",
+            "alternatives": [
+              [
+                "Hardiness 20+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 92
+    },
+    {
+      "id": "indomitable-body",
+      "name": "Indomitable Body",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          12
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "12 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 20+",
+            "alternatives": [
+              [
+                "Hardiness 20+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 92
+    },
+    {
+      "id": "armor-training",
+      "name": "Armor Training",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          7
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "7 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 1+",
+            "alternatives": [
+              [
+                "Hardiness 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 92
+    },
+    {
+      "id": "deflecting-talent",
+      "name": "Deflecting Talent",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Armor Training, Dodge 1+",
+            "alternatives": [
+              [
+                "Armor Training",
+                "Dodge 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 92
+    },
+    {
+      "id": "forge-walker",
+      "name": "Forge Walker",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Lion Heart, Hardiness 5+,",
+            "alternatives": [
+              [
+                "Lion Heart",
+                "Hardiness 5+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "lion-heart",
+      "name": "Lion Heart",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Armor Training",
+            "alternatives": [
+              [
+                "Armor Training"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "iron-champion",
+      "name": "Iron Champion",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Armor Training, Iron Master, Hardiness",
+            "alternatives": [
+              [
+                "Armor Training",
+                "Iron Master",
+                "Hardiness"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "iron-fortress",
+      "name": "Iron Fortress",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Iron Champion",
+            "alternatives": [
+              [
+                "Iron Champion"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "iron-master",
+      "name": "Iron Master",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "8 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 5+, Armor Training",
+            "alternatives": [
+              [
+                "Hardiness 5+",
+                "Armor Training"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "steel-lion",
+      "name": "Steel Lion",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Armor Training, Hardiness 5+",
+            "alternatives": [
+              [
+                "Armor Training",
+                "Hardiness 5+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 93
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          30,
+          30,
+          30
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "30, 30, 30 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 1+",
+            "alternatives": [
+              [
+                "Hardiness 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 94
+    },
+    {
+      "id": "muscle-up",
+      "name": "Muscle Up",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15, 15 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Hardiness 1+",
+            "alternatives": [
+              [
+                "Hardiness 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 94
+    },
+    {
+      "id": "exhausting-blow",
+      "name": "Exhausting Blow",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Strength 2+, Mortal Strike from any",
+            "alternatives": [
+              [
+                "Strength 2+",
+                "Mortal Strike from any"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 95
+    },
+    {
+      "id": "hold-my-ale",
+      "name": "Hold My Ale",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 95
+    },
+    {
+      "id": "overhand-swing",
+      "name": "Overhand Swing",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "15 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Strength 2+",
+            "alternatives": [
+              [
+                "Strength 2+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 95
+    },
+    {
+      "id": "alertness",
+      "name": "Alertness",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          10,
+          15,
+          10
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 10,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 10, 15, 10+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 95
+    },
+    {
+      "id": "dodge",
+      "name": "Dodge",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          25,
+          25,
+          35,
+          30
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 30,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "25, 25, 35, 30+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Alertness 1+",
+            "alternatives": [
+              [
+                "Alertness 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "martyr",
+      "name": "Martyr",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5,
+          8,
+          12,
+          12,
+          13,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 15,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5, 8, 12, 12, 13, 15+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Alertness 1+ OR Polearms",
+            "alternatives": [
+              [
+                "Alertness 1+"
+              ],
+              [
+                "Polearms"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "master-acrobat",
+      "name": "Master Acrobat",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Martyr 1+, Dodge 1+",
+            "alternatives": [
+              [
+                "Martyr 1+",
+                "Dodge 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "resist-compulsion",
+      "name": "Resist Compulsion",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          15,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "15, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Alertness 1+ or Magical Adept",
+            "alternatives": [
+              [
+                "Alertness 1+"
+              ],
+              [
+                "Magical Adept"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "bravery",
+      "name": "Bravery",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          12,
+          12,
+          12,
+          16
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 16,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "4, 4, 12, 12, 12, 16+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "valor",
+      "name": "Valor",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          8,
+          4,
+          12,
+          12,
+          12,
+          16,
+          16,
+          16,
+          20
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 20,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "8, 4, 12, 12, 12, 16, 16, 16, 20+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Bravery 3+, Leadership 5+",
+            "alternatives": [
+              [
+                "Bravery 3+",
+                "Leadership 5+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 96
+    },
+    {
+      "id": "survival",
+      "name": "Survival",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": "hybrid",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 97
+    },
+    {
+      "id": "basic-swimming",
+      "name": "Basic Swimming",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 98
+    },
+    {
+      "id": "advanced-swimming",
+      "name": "Advanced Swimming",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Basic Swimming",
+            "alternatives": [
+              [
+                "Basic Swimming"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 98
+    },
+    {
+      "id": "master-swimming",
+      "name": "Master Swimming",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [],
+        "annotations_by_level": [],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": false,
+        "source_text": "-- CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Advanced Swimming",
+            "alternatives": [
+              [
+                "Advanced Swimming"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 98
+    },
+    {
+      "id": "habitation",
+      "name": "Habitation ()",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 98
+    },
+    {
+      "id": "master-habitation",
+      "name": "Master Habitation ()",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Matching Habitation",
+            "alternatives": [
+              [
+                "Matching Habitation"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 98
+    },
+    {
+      "id": "hunter-of",
+      "name": "Hunter Of ()",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 98
+    },
+    {
+      "id": "gathering",
+      "name": "Gathering",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 99
+    },
+    {
+      "id": "prospecting",
+      "name": "Prospecting",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 99
+    },
+    {
+      "id": "tracking",
+      "name": "Tracking",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": "hybrid",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 99
+    },
+    {
+      "id": "animal-handling",
+      "name": "Animal Handling",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Survival 1+",
+            "alternatives": [
+              [
+                "Survival 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 99
+    },
+    {
+      "id": "courtly-graces",
+      "name": "Courtly Graces",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Scholarship",
+            "alternatives": [
+              [
+                "Scholarship"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 99
+    },
+    {
+      "id": "divination",
+      "name": "Divination",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 4,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "4+++ CP"
+      },
+      "succession": "procedural",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 100
+    },
+    {
+      "id": "espionage",
+      "name": "Espionage",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": "hybrid",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 101
+    },
+    {
+      "id": "counterespionage",
+      "name": "Counterespionage",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 1+",
+            "alternatives": [
+              [
+                "Espionage 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 101
+    },
+    {
+      "id": "covert-ops",
+      "name": "Covert Ops",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 1+",
+            "alternatives": [
+              [
+                "Espionage 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 101
+    },
+    {
+      "id": "cyphers-forgery",
+      "name": "Cyphers & Forgery",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 1+",
+            "alternatives": [
+              [
+                "Espionage 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 101
+    },
+    {
+      "id": "information-broker",
+      "name": "Information Broker",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 3+",
+            "alternatives": [
+              [
+                "Espionage 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 102
+    },
+    {
+      "id": "partisanship",
+      "name": "Partisanship",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 1+",
+            "alternatives": [
+              [
+                "Espionage 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 102
+    },
+    {
+      "id": "sabotage",
+      "name": "Sabotage",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Espionage 1+",
+            "alternatives": [
+              [
+                "Espionage 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Teacher Beyond 5"
+        ]
+      },
+      "source_page": 102
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": "procedural",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 102
+    },
+    {
+      "id": "army-commander",
+      "name": "Army Commander",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Leadership 3+",
+            "alternatives": [
+              [
+                "Leadership 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 103
+    },
+    {
+      "id": "naval-commander",
+      "name": "Naval Commander",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Leadership 3+, Seamanship",
+            "alternatives": [
+              [
+                "Leadership 3+",
+                "Seamanship"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 103
+    },
+    {
+      "id": "governor",
+      "name": "Governor",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Leadership 4+",
+            "alternatives": [
+              [
+                "Leadership 4+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 103
+    },
+    {
+      "id": "warlord",
+      "name": "Warlord",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Leadership 5+",
+            "alternatives": [
+              [
+                "Leadership 5+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 103
+    },
+    {
+      "id": "lesser-lore",
+      "name": "Lesser Lore ()",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 104
+    },
+    {
+      "id": "greater-lore",
+      "name": "Greater Lore ()",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Matching Lesser Lore",
+            "alternatives": [
+              [
+                "Matching Lesser Lore"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher"
+        ]
+      },
+      "source_page": 104
+    },
+    {
+      "id": "merchant",
+      "name": "Merchant",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": "procedural",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 104
+    },
+    {
+      "id": "trader-of-goods",
+      "name": "Trader Of Goods",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Merchant 3+",
+            "alternatives": [
+              [
+                "Merchant 3+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 105
+    },
+    {
+      "id": "scholarship",
+      "name": "Scholarship",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 105
+    },
+    {
+      "id": "researcher",
+      "name": "Researcher",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Scholarship, 3+ Lesser Lores",
+            "alternatives": [
+              [
+                "Scholarship",
+                "3+ Lesser Lores"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires a Superior Teacher"
+        ]
+      },
+      "source_page": 105
+    },
+    {
+      "id": "torture",
+      "name": "Torture",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 105
+    },
+    {
+      "id": "artisan",
+      "name": "Artisan",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": "procedural",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 106
+    },
+    {
+      "id": "basic-aid",
+      "name": "Basic Aid",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 106
+    },
+    {
+      "id": "advanced-aid",
+      "name": "Advanced Aid",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          11
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "11 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Basic Aid",
+            "alternatives": [
+              [
+                "Basic Aid"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 106
+    },
+    {
+      "id": "subdue",
+      "name": "Subdue",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Advanced Aid",
+            "alternatives": [
+              [
+                "Advanced Aid"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 107
+    },
+    {
+      "id": "expertise",
+      "name": "Expertise",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "2 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Scholarship",
+            "alternatives": [
+              [
+                "Scholarship"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 107
+    },
+    {
+      "id": "blacksmithing",
+      "name": "Blacksmithing",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 5,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "5+++ CP"
+      },
+      "succession": "hybrid",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 107
+    },
+    {
+      "id": "armorsmithing",
+      "name": "Armorsmithing",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Blacksmithing 1+",
+            "alternatives": [
+              [
+                "Blacksmithing 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 108
+    },
+    {
+      "id": "weaponsmithing",
+      "name": "Weaponsmithing",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Blacksmithing 1+",
+            "alternatives": [
+              [
+                "Blacksmithing 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 108
+    },
+    {
+      "id": "carpentry",
+      "name": "Carpentry",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 108
+    },
+    {
+      "id": "shipwright",
+      "name": "Shipwright",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Carpentry 1+",
+            "alternatives": [
+              [
+                "Carpentry 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 108
+    },
+    {
+      "id": "jeweler",
+      "name": "Jeweler",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 108
+    },
+    {
+      "id": "kitchenwork",
+      "name": "Kitchenwork",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 4,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "4+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 109
+    },
+    {
+      "id": "brewing",
+      "name": "Brewing",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          2
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "2+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Kitchenwork 1+",
+            "alternatives": [
+              [
+                "Kitchenwork 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 109
+    },
+    {
+      "id": "cooking",
+      "name": "Cooking",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          1
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 1,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "1+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Kitchenwork 1+",
+            "alternatives": [
+              [
+                "Kitchenwork 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 109
+    },
+    {
+      "id": "masonry",
+      "name": "Masonry",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 3,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "3+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Superior Teacher Beyond 5"
+        ]
+      },
+      "source_page": 110
+    },
+    {
+      "id": "mining",
+      "name": "Mining",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Masonry 1+",
+            "alternatives": [
+              [
+                "Masonry 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 110
+    },
+    {
+      "id": "siege-weapons",
+      "name": "Siege Weapons",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Masonry 1+",
+            "alternatives": [
+              [
+                "Masonry 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Passing Teacher, Special"
+        ]
+      },
+      "source_page": 110
+    },
+    {
+      "id": "seamanship",
+      "name": "Seamanship",
+      "status": "blue",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          3
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "3 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [],
+        "teacher": [
+          "Requires Passing Teacher"
+        ]
+      },
+      "source_page": 110
+    },
+    {
+      "id": "magical-adept",
+      "name": "Magical Adept",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          60
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "60 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [
+        "Can Only be Purchased at Character Creation"
+      ],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 110,
+      "grants_on_purchase": [
+        {
+          "skill_id": "ritual-mastery",
+          "name": "Ritual Mastery",
+          "level": 3
+        },
+        {
+          "skill_id": "battle-magic",
+          "name": "Battle Magic",
+          "spell_level": 1,
+          "quantity": 3
+        },
+        {
+          "skill_id": "battle-magic",
+          "name": "Battle Magic",
+          "spell_level": 2,
+          "quantity": 3
+        },
+        {
+          "skill_id": "battle-magic",
+          "name": "Battle Magic",
+          "spell_level": 3,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "magical-initiate",
+      "name": "Magical Initiate",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          20
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "20 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [
+        "Can Only be Purchased after Character Creation"
+      ],
+      "dependencies": {
+        "skills": [],
+        "teacher": []
+      },
+      "source_page": 111,
+      "grants_on_purchase": [
+        {
+          "skill_id": "ritual-mastery",
+          "name": "Ritual Mastery",
+          "level": 1
+        },
+        {
+          "skill_id": "battle-magic",
+          "name": "Battle Magic",
+          "spell_level": 1,
+          "quantity": 2
+        },
+        {
+          "skill_id": "battle-magic",
+          "name": "Battle Magic",
+          "spell_level": 2,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "battle-magic",
+      "name": "Battle Magic",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [],
+        "annotations_by_level": [],
+        "formula": "Spell Level + 1",
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "Spell Level + 1 CP (Special, See Description)"
+      },
+      "succession": "special",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 7 (See Text)"
+        ]
+      },
+      "source_page": 111
+    },
+    {
+      "id": "concentrated-focus",
+      "name": "Concentrated Focus",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 111
+    },
+    {
+      "id": "dual-thought",
+      "name": "Dual Thought",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          30
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "30 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Concentrated Focus",
+            "alternatives": [
+              [
+                "Concentrated Focus"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 112
+    },
+    {
+      "id": "elemental-affinity",
+      "name": "Elemental Affinity",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": true,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          5
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "5 CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 112
+    },
+    {
+      "id": "energy-channeling",
+      "name": "Energy Channeling",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          10,
+          15
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 15,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 10, 15+++ CP"
+      },
+      "succession": "standard",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 112
+    },
+    {
+      "id": "mystic-defense",
+      "name": "Mystic Defense",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 112
+    },
+    {
+      "id": "mystical-utilitarian",
+      "name": "Mystical Utilitarian",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "4, 4, 4, 4 CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 113
+    },
+    {
+      "id": "personal-magic",
+      "name": "Personal Magic",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "annotations_by_level": [
+          "*",
+          "*",
+          "*",
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 2,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "0*, 0*, 0*, 2+++ CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate, Battle",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate",
+                "Battle"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 113
+    },
+    {
+      "id": "ritual-mastery",
+      "name": "Ritual Mastery",
+      "status": "grey",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 10,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10+++ CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate"
+              ]
+            ]
+          }
+        ],
+        "teacher": [
+          "Requires Superior Teacher Beyond 7"
+        ]
+      },
+      "source_page": 113
+    },
+    {
+      "id": "signature-spell",
+      "name": "Signature Spell",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10
+        ],
+        "annotations_by_level": [
+          null
+        ],
+        "formula": null,
+        "repeat_cost": null,
+        "unlimited": false,
+        "purchasable": true,
+        "source_text": "10 CP"
+      },
+      "succession": null,
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Spell Mastery 1+",
+            "alternatives": [
+              [
+                "Spell Mastery 1+"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 113
+    },
+    {
+      "id": "spell-mastery",
+      "name": "Spell Mastery",
+      "status": "red",
+      "opening_skill": false,
+      "probationary": false,
+      "costs": {
+        "currency": "CP",
+        "by_level": [
+          10,
+          20,
+          25,
+          30,
+          35
+        ],
+        "annotations_by_level": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "formula": null,
+        "repeat_cost": 35,
+        "unlimited": true,
+        "purchasable": true,
+        "source_text": "10, 20, 25, 30, 35+++ CP"
+      },
+      "succession": "limited",
+      "purchase_restrictions": [],
+      "dependencies": {
+        "skills": [
+          {
+            "expression": "Magical Adept or Magical Initiate, Battle",
+            "alternatives": [
+              [
+                "Magical Adept"
+              ],
+              [
+                "Magical Initiate",
+                "Battle"
+              ]
+            ]
+          }
+        ],
+        "teacher": []
+      },
+      "source_page": 113
+    }
+  ]
+}

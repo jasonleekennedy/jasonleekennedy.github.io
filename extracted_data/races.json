@@ -1,0 +1,2289 @@
+{
+  "schema_version": 1,
+  "source": {
+    "file": "Rise of the Founders Rules.pdf",
+    "section": "Races"
+  },
+  "selection_rules": {
+    "human": "Choose either one homeland plus one profession, or one alternate path; do not combine an alternate path with a homeland or profession.",
+    "other_races": "Use the listed race-specific options when present.",
+    "restricted_races": "Require VP; availability may be limited by staff.",
+    "starting_skills": "Each grant is free at the listed level. Resolve one choice from each starting_skills.choices group; a grant condition refers to skills granted by the chosen homeland.",
+    "racial_purchases": "Racial purchases are separate from regular skills; each costs the listed CP and is limited to max_purchases."
+  },
+  "races": [
+    {
+      "id": "humans",
+      "name": "Humans",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [
+        {
+          "id": "homelands",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "mon-durin",
+              "name": "Mon’Durin",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "basic-aid",
+                    "name": "Basic Aid",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "gelfall",
+              "name": "GelFall",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "masonry",
+                    "name": "Masonry",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "dellerous",
+              "name": "Dellerous",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "divination",
+                    "name": "Divination",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "carnis",
+              "name": "Carnis",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "hardiness",
+                    "name": "Hardiness",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "lunder",
+              "name": "Lunder",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "kitchenwork",
+                    "name": "Kitchenwork",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "ulvesgarten",
+              "name": "Ulvesgarten",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "animal-handling",
+                    "name": "Animal Handling",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "tracking",
+                    "name": "Tracking",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "du-tauryn",
+              "name": "Du’Tauryn",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "carpentry",
+                    "name": "Carpentry",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "professions",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "soldier",
+              "name": "Soldier",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "bravery",
+                    "name": "Bravery",
+                    "level": 1
+                  }
+                ],
+                "choices": [
+                  {
+                    "id": "basic-aid-or-hardiness",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "basic-aid",
+                        "grants": [
+                          {
+                            "skill_id": "basic-aid",
+                            "name": "Basic Aid",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": false
+                        }
+                      },
+                      {
+                        "id": "hardiness",
+                        "grants": [
+                          {
+                            "skill_id": "hardiness",
+                            "name": "Hardiness",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": true
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "apprentice",
+              "name": "Apprentice",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 1,
+                    "quantity": 1,
+                    "source_label": "First Level Spell"
+                  },
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 2,
+                    "quantity": 1,
+                    "source_label": "Second Level Spell"
+                  },
+                  {
+                    "skill_id": "scholarship",
+                    "name": "Scholarship",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": [
+                  "Magical Adept"
+                ]
+              }
+            },
+            {
+              "id": "sailor",
+              "name": "Sailor",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "seamanship",
+                    "name": "Seamanship",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "espionage",
+                    "name": "Espionage",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "smith",
+              "name": "Smith",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "blacksmithing",
+                    "name": "Blacksmithing",
+                    "level": 1
+                  }
+                ],
+                "choices": [
+                  {
+                    "id": "trade-skill",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "jeweler",
+                        "grants": [
+                          {
+                            "skill_id": "jeweler",
+                            "name": "Jeweler",
+                            "level": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "armorsmithing",
+                        "grants": [
+                          {
+                            "skill_id": "armorsmithing",
+                            "name": "Armorsmithing",
+                            "level": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "weaponsmithing",
+                        "grants": [
+                          {
+                            "skill_id": "weaponsmithing",
+                            "name": "Weaponsmithing",
+                            "level": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "tradesmen",
+              "name": "Tradesmen",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "merchant",
+                    "name": "Merchant",
+                    "level": 1
+                  }
+                ],
+                "choices": [
+                  {
+                    "id": "trade-skill",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "jeweler",
+                        "grants": [
+                          {
+                            "skill_id": "jeweler",
+                            "name": "Jeweler",
+                            "level": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "carpentry",
+                        "grants": [
+                          {
+                            "skill_id": "carpentry",
+                            "name": "Carpentry",
+                            "level": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "artisan",
+                        "grants": [
+                          {
+                            "skill_id": "artisan",
+                            "name": "Artisan",
+                            "level": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "ranger",
+              "name": "Ranger",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "survival",
+                    "name": "Survival",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "tracking",
+                    "name": "Tracking",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "monk",
+              "name": "Monk",
+              "starting_skills": {
+                "grants": [],
+                "choices": [
+                  {
+                    "id": "aid-or-study",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "basic-aid",
+                        "grants": [
+                          {
+                            "skill_id": "basic-aid",
+                            "name": "Basic Aid",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": false
+                        }
+                      },
+                      {
+                        "id": "scholarship-and-brewing",
+                        "grants": [
+                          {
+                            "skill_id": "scholarship",
+                            "name": "Scholarship",
+                            "level": 1
+                          },
+                          {
+                            "skill_id": "brewing",
+                            "name": "Brewing",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kitchenwork-or-cooking",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "kitchenwork",
+                        "grants": [
+                          {
+                            "skill_id": "kitchenwork",
+                            "name": "Kitchenwork",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "kitchenwork",
+                          "equals": false
+                        }
+                      },
+                      {
+                        "id": "cooking-and-carpentry",
+                        "grants": [
+                          {
+                            "skill_id": "cooking",
+                            "name": "Cooking",
+                            "level": 1
+                          },
+                          {
+                            "skill_id": "carpentry",
+                            "name": "Carpentry",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "kitchenwork",
+                          "equals": true
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "healer",
+              "name": "Healer",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 1,
+                    "quantity": 1,
+                    "source_label": "First Level Spell"
+                  }
+                ],
+                "choices": [
+                  {
+                    "id": "basic-aid-or-additional-spells",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "basic-aid",
+                        "grants": [
+                          {
+                            "skill_id": "basic-aid",
+                            "name": "Basic Aid",
+                            "level": 1
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": false
+                        }
+                      },
+                      {
+                        "id": "additional-spells",
+                        "grants": [
+                          {
+                            "skill_id": "battle-magic",
+                            "name": "Battle Magic",
+                            "spell_level": 1,
+                            "quantity": 1,
+                            "source_label": "First Level Spell"
+                          },
+                          {
+                            "skill_id": "battle-magic",
+                            "name": "Battle Magic",
+                            "spell_level": 2,
+                            "quantity": 1,
+                            "source_label": "Second Level Spell"
+                          }
+                        ],
+                        "condition": {
+                          "homeland_grants_skill": "basic-aid",
+                          "equals": true
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "alternate-paths",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "cultist",
+              "name": "Cultist",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "scholarship",
+                    "name": "Scholarship",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "mystical-utilitarian",
+                    "name": "Mystical Utilitarian",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "concentrated-focus",
+                    "name": "Concentrated Focus",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": [
+                  "Magical Adept"
+                ]
+              }
+            },
+            {
+              "id": "exile",
+              "name": "Exile",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "espionage",
+                    "name": "Espionage",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "survival",
+                    "name": "Survival",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "tracking",
+                    "name": "Tracking",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "shipwreck-survivor",
+              "name": "Shipwreck Survivor",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "survival",
+                    "name": "Survival",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "basic-swimming",
+                    "name": "Basic Swimming",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "tracking",
+                    "name": "Tracking",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "mercenary",
+              "name": "Mercenary",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "hardiness",
+                    "name": "Hardiness",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "armor-training",
+                    "name": "Armor Training",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "criminal",
+              "name": "Criminal",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "espionage",
+                    "name": "Espionage",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "basic-aid",
+                    "name": "Basic Aid",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "artisan",
+                    "name": "Artisan",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            }
+          ]
+        }
+      ],
+      "starting_skills": {
+        "grants": [],
+        "choices": [],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 18,
+      "selection_rule": {
+        "mode": "one_of",
+        "sets": [
+          {
+            "id": "homeland-and-profession",
+            "select": {
+              "homelands": 1,
+              "professions": 1
+            }
+          },
+          {
+            "id": "alternate-path",
+            "select": {
+              "alternate-paths": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "dwarves",
+      "name": "Dwarves",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [
+        {
+          "id": "families",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "craghold",
+              "name": "Craghold",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "hammerson",
+              "name": "Hammerson",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "stonehaft",
+              "name": "Stonehaft",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "ironblood",
+              "name": "Ironblood",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "grindstone",
+              "name": "Grindstone",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "copperfold",
+              "name": "Copperfold",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            }
+          ]
+        }
+      ],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "armor-training",
+            "name": "Armor Training",
+            "level": 1
+          },
+          {
+            "skill_id": "blacksmithing",
+            "name": "Blacksmithing",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "shield-or-leadership",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "shield",
+                "grants": [
+                  {
+                    "skill_id": "shield",
+                    "name": "Shield",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "bravery-leadership-merchant",
+                "grants": [
+                  {
+                    "skill_id": "bravery",
+                    "name": "Bravery",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "leadership",
+                    "name": "Leadership",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "merchant",
+                    "name": "Merchant",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-delusions-hallucinations-intoxication",
+          "name": "Racial Resist: Delusions / Hallucinations / Intoxication",
+          "max_purchases": 3,
+          "cost_per_purchase": 4,
+          "description": "Each purchase grants one daily resist that can cover Delusions, Hallucinations, or Intoxication. The third resist is usable once per combat.",
+          "source_page": 22
+        }
+      ],
+      "source_page": 22
+    },
+    {
+      "id": "moon-elves",
+      "name": "Moon Elves",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [
+        {
+          "id": "houses",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "house-teleri",
+              "name": "House Teleri",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "house-satar",
+              "name": "House Satar",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "house-mystwood",
+              "name": "House Mystwood",
+              "starting_skills": {
+                "grants": [],
+                "choices": [],
+                "required_purchases": []
+              }
+            }
+          ]
+        }
+      ],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "alertness",
+            "name": "Alertness",
+            "level": 1
+          },
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "bow",
+            "name": "Bow",
+            "level": 1,
+            "source_label": "Bow Skill Group"
+          }
+        ],
+        "choices": [
+          {
+            "id": "aid-or-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "basic-aid",
+                "grants": [
+                  {
+                    "skill_id": "basic-aid",
+                    "name": "Basic Aid",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-astral",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Astral"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-arcane-sea",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Arcane Sea"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-e-aen",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "E'aen"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-old-world",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Old World"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "craft-or-seamanship",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "seamanship",
+                "grants": [
+                  {
+                    "skill_id": "seamanship",
+                    "name": "Seamanship",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "jeweler",
+                "grants": [
+                  {
+                    "skill_id": "jeweler",
+                    "name": "Jeweler",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "carpentry",
+                "grants": [
+                  {
+                    "skill_id": "carpentry",
+                    "name": "Carpentry",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-compulsion",
+          "name": "Racial Resist Compulsion",
+          "max_purchases": 3,
+          "cost_per_purchase": 6,
+          "description": "Each purchase grants one daily resist against Charm, Dominate, Fascinate, Guard, or Pacify. The third resist is usable once per combat.",
+          "source_page": 23
+        }
+      ],
+      "source_page": 23
+    },
+    {
+      "id": "sylvan",
+      "name": "Sylvan",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "gathering",
+            "name": "Gathering",
+            "level": 1
+          },
+          {
+            "skill_id": "basic-aid",
+            "name": "Basic Aid",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-djinn",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Djinn"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-e-aen",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "E'aen"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-fae",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Fae"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-old-world",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Old World"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-mind-affecting",
+          "name": "Racial Resist Mind-Affecting",
+          "max_purchases": 3,
+          "cost_per_purchase": 12,
+          "description": "Each purchase grants one daily resist against mind-affecting effects. The third resist is usable once per combat.",
+          "source_page": 25
+        }
+      ],
+      "source_page": 24
+    },
+    {
+      "id": "orcs",
+      "name": "Orcs",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [
+        {
+          "id": "clans",
+          "selection": "one",
+          "choices": [
+            {
+              "id": "oreb",
+              "name": "Oreb",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "blacksmithing",
+                    "name": "Blacksmithing",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "masonry",
+                    "name": "Masonry",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "siege-weapons",
+                    "name": "Siege Weapons",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "maireb",
+              "name": "Maireb",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "survival",
+                    "name": "Survival",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "artisan",
+                    "name": "Artisan",
+                    "level": 1
+                  },
+                  {
+                    "skill_id": "divination",
+                    "name": "Divination",
+                    "level": 1
+                  }
+                ],
+                "choices": [],
+                "required_purchases": []
+              }
+            },
+            {
+              "id": "agreb",
+              "name": "Agreb",
+              "starting_skills": {
+                "grants": [
+                  {
+                    "skill_id": "leadership",
+                    "name": "Leadership",
+                    "level": 1
+                  }
+                ],
+                "choices": [
+                  {
+                    "id": "lesser-lore",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "lesser-lore-behemoth",
+                        "grants": [
+                          {
+                            "skill_id": "lesser-lore",
+                            "name": "Lesser Lore",
+                            "level": 1,
+                            "specialization": "Behemoth"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "lesser-lore-giant",
+                        "grants": [
+                          {
+                            "skill_id": "lesser-lore",
+                            "name": "Lesser Lore",
+                            "level": 1,
+                            "specialization": "Giant"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "lesser-lore-spirits",
+                        "grants": [
+                          {
+                            "skill_id": "lesser-lore",
+                            "name": "Lesser Lore",
+                            "level": 1,
+                            "specialization": "Spirits"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "hunter-of",
+                    "selection": "one",
+                    "choices": [
+                      {
+                        "id": "hunter-of-orcs",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Orcs"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-goblins",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Goblins"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-elves",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Elves"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-humans",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Humans"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-dwarves",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Dwarves"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-drakes",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Drakes"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-dark-heart-spirits",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Dark Heart Spirits"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-e-aen-spirits",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "E'aen Spirits"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "hunter-of-animals",
+                        "grants": [
+                          {
+                            "skill_id": "hunter-of",
+                            "name": "Hunter Of",
+                            "level": 1,
+                            "specialization": "Animals"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "required_purchases": []
+              }
+            }
+          ]
+        }
+      ],
+      "starting_skills": {
+        "grants": [],
+        "choices": [],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 26
+    },
+    {
+      "id": "goblins",
+      "name": "Goblins",
+      "restricted": false,
+      "availability": {
+        "requires_vp": false
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [],
+        "choices": [
+          {
+            "id": "espionage-or-merchant",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "espionage",
+                "grants": [
+                  {
+                    "skill_id": "espionage",
+                    "name": "Espionage",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "merchant",
+                "grants": [
+                  {
+                    "skill_id": "merchant",
+                    "name": "Merchant",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "masonry-or-survival",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "masonry",
+                "grants": [
+                  {
+                    "skill_id": "masonry",
+                    "name": "Masonry",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "survival",
+                "grants": [
+                  {
+                    "skill_id": "survival",
+                    "name": "Survival",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "daggers-or-thrown-weapons",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "daggers",
+                "grants": [
+                  {
+                    "skill_id": "daggers",
+                    "name": "Daggers",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "thrown-weapons",
+                "grants": [
+                  {
+                    "skill_id": "thrown-weapons",
+                    "name": "Thrown Weapons",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lore-or-seamanship",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-planar-nether-lore",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Planar Nether"
+                  }
+                ]
+              },
+              {
+                "id": "seamanship",
+                "grants": [
+                  {
+                    "skill_id": "seamanship",
+                    "name": "Seamanship",
+                    "level": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-toxins",
+          "name": "Racial Resist Toxins",
+          "max_purchases": 3,
+          "cost_per_purchase": 4,
+          "description": "Each purchase grants one daily resist against toxins. The third resist is usable once per combat.",
+          "source_page": 27
+        }
+      ],
+      "source_page": 27
+    },
+    {
+      "id": "zephilium",
+      "name": "Zephilium",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "kitchenwork",
+            "name": "Kitchenwork",
+            "level": 1
+          },
+          {
+            "skill_id": "bow",
+            "name": "Bow",
+            "level": 1,
+            "source_label": "Longbow Skill Group",
+            "specialization": "Longbow"
+          },
+          {
+            "skill_id": "swords-axes",
+            "name": "Swords & Axes",
+            "level": 1,
+            "source_label": "Swords & Axes Group"
+          },
+          {
+            "skill_id": "basic-aid",
+            "name": "Basic Aid",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          },
+          {
+            "skill_id": "jeweler",
+            "name": "Jeweler",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-planar-air",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Planar Air"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 28
+    },
+    {
+      "id": "sahuagin",
+      "name": "Sahuagin",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "basic-swimming",
+            "name": "Basic Swimming",
+            "level": 1
+          },
+          {
+            "skill_id": "advanced-swimming",
+            "name": "Advanced Swimming",
+            "level": 1
+          },
+          {
+            "skill_id": "master-swimming",
+            "name": "Master Swimming",
+            "level": 1
+          },
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "merchant",
+            "name": "Merchant",
+            "level": 1
+          },
+          {
+            "skill_id": "espionage",
+            "name": "Espionage",
+            "level": 1
+          },
+          {
+            "skill_id": "polearms",
+            "name": "Polearms",
+            "level": 1,
+            "source_label": "Polearms Group"
+          },
+          {
+            "skill_id": "divination",
+            "name": "Divination",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-arcane-sea",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Arcane Sea"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-planar-water",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Planar Water"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 28
+    },
+    {
+      "id": "faun",
+      "name": "Faun",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "blunts",
+            "name": "Blunts",
+            "level": 1,
+            "source_label": "Blunts Group"
+          },
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "kitchenwork",
+            "name": "Kitchenwork",
+            "level": 1
+          },
+          {
+            "skill_id": "basic-aid",
+            "name": "Basic Aid",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-fae",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Fae"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-e-aen",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "E'aen"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-spirits",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Spirits"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-compulsion",
+          "name": "Racial Resist Compulsion",
+          "max_purchases": 3,
+          "cost_per_purchase": 6,
+          "description": "Each purchase grants one daily resist against Charm, Dominate, Fascinate, Guard, or Pacify. The third resist is usable once per combat.",
+          "source_page": 29
+        },
+        {
+          "id": "racial-resist-cursing",
+          "name": "Racial Resist Cursing",
+          "max_purchases": 3,
+          "cost_per_purchase": 8,
+          "description": "Each purchase grants one daily resist against curses such as Agony, Doom, Feebleness, Petrify, or Slow. The third resist is usable once per combat.",
+          "source_page": 29
+        }
+      ],
+      "source_page": 29
+    },
+    {
+      "id": "gnome",
+      "name": "Gnome",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "spell-mastery",
+            "name": "Spell Mastery",
+            "level": 1
+          },
+          {
+            "skill_id": "kitchenwork",
+            "name": "Kitchenwork",
+            "level": 1
+          },
+          {
+            "skill_id": "merchant",
+            "name": "Merchant",
+            "level": 1
+          },
+          {
+            "skill_id": "divination",
+            "name": "Divination",
+            "level": 1
+          },
+          {
+            "skill_id": "brewing",
+            "name": "Brewing",
+            "level": 1
+          },
+          {
+            "skill_id": "alertness",
+            "name": "Alertness",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-old-world",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Old World"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-e-aen",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "E'aen"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-lycanthropy",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Lycanthropy"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 30
+    },
+    {
+      "id": "night-elf",
+      "name": "Night Elf",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "alertness",
+            "name": "Alertness",
+            "level": 1
+          },
+          {
+            "skill_id": "daggers",
+            "name": "Daggers",
+            "level": 1
+          },
+          {
+            "skill_id": "swords-axes",
+            "name": "Swords & Axes",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          },
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "espionage",
+            "name": "Espionage",
+            "level": 1
+          },
+          {
+            "skill_id": "bow",
+            "name": "Bow",
+            "level": 1,
+            "source_label": "Bow Skill Group"
+          }
+        ],
+        "choices": [
+          {
+            "id": "aid-or-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "basic-aid",
+                "grants": [
+                  {
+                    "skill_id": "basic-aid",
+                    "name": "Basic Aid",
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-undead",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Undead"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-arcane-sea",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Arcane Sea"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-e-aen",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "E'aen"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-old-world",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Old World"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hunter-of",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "hunter-of-elves",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Elves"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-humans",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Humans"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-dwarves",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Dwarves"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-dark-heart-spirits",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Dark Heart Spirits"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-e-aen-spirits",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "E'aen Spirits"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-animals",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Animals"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-fleshy-undead",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Fleshy Undead"
+                  }
+                ]
+              },
+              {
+                "id": "hunter-of-skeletal-undead",
+                "grants": [
+                  {
+                    "skill_id": "hunter-of",
+                    "name": "Hunter Of",
+                    "level": 1,
+                    "specialization": "Skeletal Undead"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-compulsion",
+          "name": "Racial Resist Compulsion",
+          "max_purchases": 3,
+          "cost_per_purchase": 6,
+          "description": "Each purchase grants one daily resist against Charm, Dominate, Fascinate, Guard, or Pacify. The third resist is usable once per combat.",
+          "source_page": 30
+        }
+      ],
+      "source_page": 30
+    },
+    {
+      "id": "sun-elf",
+      "name": "Sun Elf",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "alertness",
+            "name": "Alertness",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          },
+          {
+            "skill_id": "leadership",
+            "name": "Leadership",
+            "level": 1
+          },
+          {
+            "skill_id": "mystic-defense",
+            "name": "Mystic Defense",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-planar-fire",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Planar Fire"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-planar-astral",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Planar Astral"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-magical-theory",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Magical Theory"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-old-world",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Old World"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "magical-adept-package",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "magical-adept",
+                "grants": [
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 1,
+                    "quantity": 1,
+                    "source_label": "First Level Spell"
+                  },
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 2,
+                    "quantity": 1,
+                    "source_label": "Second Level Spell"
+                  },
+                  {
+                    "skill_id": "battle-magic",
+                    "name": "Battle Magic",
+                    "spell_level": 3,
+                    "quantity": 1,
+                    "source_label": "Third Level Spell"
+                  },
+                  {
+                    "skill_id": "ritual-mastery",
+                    "name": "Ritual Mastery",
+                    "level": 1
+                  }
+                ],
+                "condition": {
+                  "has_skill": "magical-adept",
+                  "equals": true
+                }
+              },
+              {
+                "id": "non-magical-adept",
+                "grants": [
+                  {
+                    "skill_id": "bow",
+                    "name": "Bow",
+                    "level": 1,
+                    "source_label": "Bow Skill Group"
+                  },
+                  {
+                    "skill_id": "polearms",
+                    "name": "Polearms",
+                    "level": 1,
+                    "source_label": "Polearms Group"
+                  },
+                  {
+                    "skill_id": "basic-aid",
+                    "name": "Basic Aid",
+                    "level": 1
+                  }
+                ],
+                "condition": {
+                  "has_skill": "magical-adept",
+                  "equals": false
+                }
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-compulsion",
+          "name": "Racial Resist Compulsion",
+          "max_purchases": 3,
+          "cost_per_purchase": 6,
+          "description": "Each purchase grants one daily resist against Charm, Dominate, Fascinate, Guard, or Pacify. The third resist is usable once per combat.",
+          "source_page": 31
+        }
+      ],
+      "source_page": 31
+    },
+    {
+      "id": "ensouled",
+      "name": "Ensouled",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "alertness",
+            "name": "Alertness",
+            "level": 1
+          },
+          {
+            "skill_id": "survival",
+            "name": "Survival",
+            "level": 1
+          },
+          {
+            "skill_id": "habitation",
+            "name": "Habitation",
+            "level": 1,
+            "specialization": "Valley of Ygg"
+          }
+        ],
+        "choices": [],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-resist-toxins",
+          "name": "Racial Resist Toxins",
+          "max_purchases": 3,
+          "cost_per_purchase": 6,
+          "description": "Each purchase grants one daily resist against toxins. The third resist is usable once per combat.",
+          "source_page": 32
+        }
+      ],
+      "source_page": 32
+    },
+    {
+      "id": "ogre",
+      "name": "Ogre",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [],
+        "choices": [],
+        "required_purchases": []
+      },
+      "racial_purchases": [
+        {
+          "id": "racial-read-and-write",
+          "name": "Racial Read and Write",
+          "max_purchases": 1,
+          "cost_per_purchase": 15,
+          "description": "Purchase the ability to read and write as a racial-specific skill.",
+          "source_page": 32
+        }
+      ],
+      "source_page": 32
+    },
+    {
+      "id": "arcatraz",
+      "name": "Arcatraz",
+      "restricted": true,
+      "availability": {
+        "requires_vp": true
+      },
+      "options": [],
+      "starting_skills": {
+        "grants": [
+          {
+            "skill_id": "mystical-utilitarian",
+            "name": "Mystical Utilitarian",
+            "level": 1
+          },
+          {
+            "skill_id": "scholarship",
+            "name": "Scholarship",
+            "level": 1
+          }
+        ],
+        "choices": [
+          {
+            "id": "lesser-lore",
+            "selection": "one",
+            "choices": [
+              {
+                "id": "lesser-lore-magical-theory",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Magical Theory"
+                  }
+                ]
+              },
+              {
+                "id": "lesser-lore-astral",
+                "grants": [
+                  {
+                    "skill_id": "lesser-lore",
+                    "name": "Lesser Lore",
+                    "level": 1,
+                    "specialization": "Astral"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required_purchases": []
+      },
+      "racial_purchases": [],
+      "source_page": 33
+    }
+  ]
+}

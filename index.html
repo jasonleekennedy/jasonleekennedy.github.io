@@ -1,1 +1,109 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="Rise New Character Build Assistant" content="Tool to help create valid new characters for Rise"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Rise New Character Build Assistant</title><script defer="defer" src="/static/js/main.edd17c52.js"></script><link href="/static/css/main.c8225dfd.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#161914">
+    <title>Rise Character Builder</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Rise Character Builder home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>
+          <strong>Rise Character Builder</strong>
+        </span>
+      </a>
+      <div class="topbar-note">Beta Version - Verify Results</div>
+    </header>
+
+    <main class="page-shell">
+      <div id="load-error" class="notice notice-error" role="alert" hidden></div>
+
+      <div class="builder-grid">
+        <aside class="character-sidebar" aria-label="Character summary">
+          <div class="totals" aria-label="Character point totals">
+            <article class="total-card total-main">
+              <span class="total-label">CP spent</span>
+              <strong id="total-cp">0</strong>
+            </article>
+            <article class="total-card red-card">
+              <span class="total-label"><i class="status-dot red-dot"></i> Red skills</span>
+              <strong id="red-cp">0</strong>
+            </article>
+            <article class="total-card blue-card">
+              <span class="total-label"><i class="status-dot blue-dot"></i> Blue skills</span>
+              <strong id="blue-cp">0</strong>
+            </article>
+          </div>
+          <section class="panel skills-panel" aria-labelledby="character-skills-heading">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">YOUR CHARACTER</p>
+                <h2 id="character-skills-heading">Skill ledger</h2>
+              </div>
+              <button id="undo-purchase" class="button button-quiet" type="button" disabled>Undo</button>
+            </div>
+            <div id="skill-ledger" class="skill-ledger"></div>
+          </section>
+        </aside>
+
+        <section class="panel editor-panel" aria-label="Character selections">
+          <div class="editor-tabs" role="tablist" aria-label="Character selections">
+            <button id="race-tab" class="editor-tab" type="button" role="tab" aria-selected="true" aria-controls="race-panel">Race</button>
+            <button id="skills-tab" class="editor-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel" tabindex="-1">Skills</button>
+          </div>
+          <section id="race-panel" class="editor-panel-content race-panel" role="tabpanel" aria-labelledby="race-tab">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">01 / ORIGIN</p>
+                <h2 id="race-heading">Choose a race</h2>
+              </div>
+            </div>
+            <label class="field-label" for="race-select">Race</label>
+            <select id="race-select" class="control"></select>
+            <div id="race-badge" class="race-badge"></div>
+            <p id="race-description" class="muted-copy"></p>
+            <div id="race-options" class="race-options"></div>
+            <div id="racial-choices" class="racial-choices"></div>
+            <div id="racial-purchases" class="racial-purchases"></div>
+            <div id="racial-grants" class="racial-grants"></div>
+          </section>
+          <section id="skills-panel" class="editor-panel-content purchase-panel" role="tabpanel" aria-labelledby="skills-tab" hidden>
+            <div class="panel-heading purchase-heading">
+              <div>
+                <p class="eyebrow">02 / ADVANCEMENT</p>
+                <h2 id="purchase-heading">Purchase skills</h2>
+                <p class="muted-copy">Skills granted by your race and racial choices are free and excluded from CP totals.</p>
+              </div>
+            </div>
+            <div class="skill-filters">
+              <label class="search-wrap">
+                <span class="sr-only">Search skills</span>
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input id="skill-search" class="control" type="search" placeholder="Search skills…" autocomplete="off">
+              </label>
+              <label class="filter-label">
+                <span class="sr-only">Filter by skill color</span>
+                <select id="status-filter" class="control">
+                  <option value="all">All colors</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="grey">Grey</option>
+                </select>
+              </label>
+            </div>
+            <label class="prerequisite-filter" for="qualifying-skills-only">
+              <input id="qualifying-skills-only" type="checkbox">
+              <span>Only show skills with met prerequisites</span>
+            </label>
+            <div id="skill-count" class="skill-count"></div>
+            <div id="skill-list" class="skill-list"></div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
